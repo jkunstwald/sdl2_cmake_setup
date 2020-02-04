@@ -2,6 +2,8 @@
 [Setup]
 AppName                = SDL2
 AppVersion             = 2.0.10
+AppPublisher           = SDL Community / Jonathan Kunstwald
+AppPublisherURL        = https://github.com/jkunstwald/sdl2_cmake_setup
 DefaultDirName         = C:\Libraries\SDL2
 OutputBaseFilename     = SDL2_Setup
 ExtraDiskSpaceRequired = 1937408
@@ -18,8 +20,8 @@ Source: "data\sdl2-config.cmake"; DestDir: "{app}\SDL2-2.0.10"; Flags: ignorever
 Name: "{app}\SDL2-2.0.10\include\SDL2"
 
 [Registry]
-; Create a system environment variable SDL2_DIR for automatic CMake detection
-Root: HKCU; Subkey: "Environment"; ValueType:string; ValueName: "SDL2_DIR"; \
+; Create a system-wide environment variable SDL2_DIR for automatic CMake detection
+Root: HKLM; Subkey: "System\CurrentControlSet\Control\Session Manager\Environment"; ValueType:string; ValueName: "SDL2_DIR"; \
     ValueData: "{app}\SDL2-2.0.10"; Flags: preservestringtype uninsdeletevalue
 
 [UninstallDelete]
