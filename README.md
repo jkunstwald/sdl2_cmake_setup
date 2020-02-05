@@ -1,14 +1,14 @@
 # SDL2 Setup
 
-![screenshot](https://user-images.githubusercontent.com/17261478/73796556-cb109f80-47ad-11ea-945f-d76f312508a4.PNG)
+![screenshot](https://user-images.githubusercontent.com/17261478/73799160-707b4180-47b5-11ea-8988-1bbca25d03d6.PNG)
+
+**Download: [SDL2_Setup.exe](https://github.com/jkunstwald/sdl2_cmake_setup/releases/download/v1.1/SDL2_Setup.exe)**
 
 Installs SDL2 on Windows (MSVC, 32/64bit), making this work out of the box:
 
 ```cmake
 find_package(SDL2 REQUIRED)
 ```
-
-**Download: [SDL2_Setup.exe](https://github.com/jkunstwald/sdl2_cmake_setup/releases/download/v1.0/SDL2_Setup.exe)**
 
 ---
 
