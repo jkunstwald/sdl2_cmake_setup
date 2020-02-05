@@ -1,3 +1,4 @@
+#pragma include __INCLUDE__ + ";" + ReadReg(HKLM, "Software\Mitrich Software\Inno Download Plugin", "InstallDir")
 
 [Setup]
 AppName                = SDL2
@@ -7,7 +8,8 @@ AppPublisherURL        = https://github.com/jkunstwald/sdl2_cmake_setup
 DefaultDirName         = C:\Libraries\SDL2
 OutputBaseFilename     = SDL2_Setup
 ExtraDiskSpaceRequired = 1937408
-ChangesEnvironment     = yes  
+ChangesEnvironment     = yes
+WizardStyle            = modern  
 
 #include <idp.iss>
     
